@@ -6,7 +6,12 @@ import { imagetools } from "vite-imagetools"
 import remarkFrontmatter from "remark-frontmatter"
 import remarkMdxFrontmatter from "remark-mdx-frontmatter"
 
+// GitHub Pages serves project sites under /<repo>/, so CI builds with a base
+// path; local dev and Vercel keep the root.
+const base = process.env.GITHUB_ACTIONS ? "/portmaster-ports/" : "/"
+
 export default defineConfig({
+  base,
   plugins: [
     // Runs before the React plugin so .md files become JSX modules.
     {
