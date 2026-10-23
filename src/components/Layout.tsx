@@ -12,9 +12,6 @@ export default function Layout() {
             Portmaster Ports
           </Link>
           <nav className="flex items-center gap-5 text-sm">
-            <a href="/#ports" className="text-neutral-400 hover:text-white">
-              Ports
-            </a>
             <NavLink to="/disclaimer" className={navClass}>
               Disclaimer
             </NavLink>

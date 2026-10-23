@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { ports } from "../data/ports"
+import { ports } from "../content/ports"
 import { formatDate } from "../lib/format"
 
 export default function Home() {
