@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom"
+import Downloads from "../components/Downloads"
 import { getPort } from "../content/ports"
 import { formatDate } from "../lib/format"
 
@@ -63,18 +64,7 @@ export default function PortDetail() {
         ))}
       </ul>
 
-      {port.download && (
-        <a
-          href={port.download}
-          download
-          className="inline-flex items-center gap-2 rounded-md border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm text-neutral-100 transition-colors hover:border-neutral-500 hover:bg-neutral-800"
-        >
-          <span aria-hidden="true" className="text-neutral-500">
-            ↓
-          </span>
-          Download
-        </a>
-      )}
+      <Downloads alias={port.alias ?? port.slug} />
     </div>
   )
 }

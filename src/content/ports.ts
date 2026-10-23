@@ -5,7 +5,7 @@ export type PortFrontmatter = {
   updated: string
   game_version?: string
   tags: string[]
-  download?: string
+  alias?: string
 }
 
 export type Port = PortFrontmatter & {

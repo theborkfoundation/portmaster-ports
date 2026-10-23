@@ -1,0 +1,11 @@
+{
+  "tag_name": "v0.0.0",
+  "assets": [
+    {
+      "name": "pacman256-20261023.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/pacman256-20261023.zip",
+      "size": 1188657,
+      "updated_at": "2026-10-23T12:00:00Z"
+    }
+  ]
+}
