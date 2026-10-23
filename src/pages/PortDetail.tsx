@@ -9,6 +9,7 @@ export default function PortDetail() {
   if (!port) {
     return (
       <div className="space-y-4">
+        <title>Port not found — Portmaster Ports</title>
         <h1 className="text-2xl font-semibold tracking-tight">Port not found</h1>
         <p className="text-neutral-400">Nothing lives at this address yet.</p>
         <Link to="/" className="text-sm text-neutral-400 underline hover:text-white">
@@ -20,6 +21,7 @@ export default function PortDetail() {
 
   return (
     <div className="space-y-8">
+      <title>{`${port.name} — Portmaster Ports`}</title>
       <Link to="/" className="text-sm text-neutral-400 hover:text-white">
         ← Home
       </Link>

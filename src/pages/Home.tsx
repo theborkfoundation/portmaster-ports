@@ -5,6 +5,7 @@ import { formatDate } from "../lib/format"
 export default function Home() {
   return (
     <div className="space-y-12">
+      <title>Portmaster Ports</title>
       <section className="space-y-4">
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
           A collection of PortMaster ports
