@@ -29,12 +29,14 @@ export default function PortDetail() {
       <header className="space-y-3">
         <h1 className="text-2xl font-semibold tracking-tight">{port.name}</h1>
         <dl className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-neutral-500">
-          {port.game_version && (
-            <div className="flex gap-1.5">
-              <dt>Game version</dt>
-              <dd className="text-neutral-300">{port.game_version}</dd>
-            </div>
-          )}
+          <div className="flex gap-1.5">
+            <dt>Game version</dt>
+            <dd className="text-neutral-300">{port.game_version}</dd>
+          </div>
+          <div className="flex gap-1.5">
+            <dt>Bundle</dt>
+            <dd className="font-mono text-neutral-300">{port.game_bundle}</dd>
+          </div>
           <div className="flex gap-1.5">
             <dt>Last updated</dt>
             <dd className="text-neutral-300">{formatDate(port.updated)}</dd>
@@ -66,7 +68,7 @@ export default function PortDetail() {
         ))}
       </ul>
 
-      <Downloads alias={port.alias ?? port.slug} />
+      <Downloads alias={port.alias} />
     </div>
   )
 }

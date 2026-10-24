@@ -3,9 +3,10 @@ import type { ComponentType } from "react"
 export type PortFrontmatter = {
   name: string
   updated: string
-  game_version?: string
+  game_version: string
+  game_bundle: string
   tags: string[]
-  alias?: string
+  alias: string
 }
 
 export type Port = PortFrontmatter & {
