@@ -6,6 +6,7 @@ export type ReleaseAsset = {
   url: string
   size: number
   updated: string
+  downloads: number
 }
 
 export type ReleaseInfo = {
@@ -17,6 +18,7 @@ type RawAsset = {
   browser_download_url: string
   size: number
   updated_at: string
+  download_count: number
 }
 
 type RawRelease = {
@@ -50,6 +52,7 @@ export function getRelease(): Promise<ReleaseInfo> {
             url: asset.browser_download_url,
             size: asset.size,
             updated: asset.updated_at,
+            downloads: asset.download_count,
           })),
         }
       })
@@ -61,10 +64,10 @@ export function getRelease(): Promise<ReleaseInfo> {
   return pending
 }
 
-/** Assets whose file name starts with the port's alias, newest name first. */
+/** Assets whose file name starts with the port's alias, newest upload first. */
 export function assetsFor(release: ReleaseInfo, alias: string): ReleaseAsset[] {
   const prefix = alias.toLowerCase()
   return release.assets
     .filter((asset) => asset.name.toLowerCase().startsWith(prefix))
-    .sort((a, b) => b.name.localeCompare(a.name))
+    .sort((a, b) => b.updated.localeCompare(a.updated) || b.name.localeCompare(a.name))
 }

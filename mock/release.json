@@ -2,10 +2,60 @@
   "tag_name": "v0.0.0",
   "assets": [
     {
-      "name": "pacman256-20261023.zip",
-      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/pacman256-20261023.zip",
-      "size": 1188657,
-      "updated_at": "2026-10-23T12:00:00Z"
+      "name": "crossyroad-20261025-101515.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/crossyroad-20261025-101515.zip",
+      "size": 1191471,
+      "updated_at": "2026-10-25T03:15:47Z",
+      "download_count": 3
+    },
+    {
+      "name": "crossyroad-20261026-163839.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/crossyroad-20261026-163839.zip",
+      "size": 1193734,
+      "updated_at": "2026-10-26T09:38:48Z",
+      "download_count": 0
+    },
+    {
+      "name": "juicyrealm-20261026-163857.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/juicyrealm-20261026-163857.zip",
+      "size": 1249685,
+      "updated_at": "2026-10-26T09:39:06Z",
+      "download_count": 0
+    },
+    {
+      "name": "pacman256-20261025-100116.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/pacman256-20261025-100116.zip",
+      "size": 1193731,
+      "updated_at": "2026-10-25T03:02:05Z",
+      "download_count": 6
+    },
+    {
+      "name": "pacman256-20261026-163935.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/pacman256-20261026-163935.zip",
+      "size": 1196224,
+      "updated_at": "2026-10-26T09:39:43Z",
+      "download_count": 0
+    },
+    {
+      "name": "pacmancedx-20261026-163820.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/pacmancedx-20261026-163820.zip",
+      "size": 1159221,
+      "updated_at": "2026-10-26T09:38:34Z",
+      "download_count": 0
+    },
+    {
+      "name": "skyforce-20261025-100233.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/skyforce-20261025-100233.zip",
+      "size": 1765286,
+      "updated_at": "2026-10-25T03:02:47Z",
+      "download_count": 1
+    },
+    {
+      "name": "skyforce-20261026-163917.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/skyforce-20261026-163917.zip",
+      "size": 1767521,
+      "updated_at": "2026-10-26T09:39:26Z",
+      "download_count": 0
     }
   ]
 }

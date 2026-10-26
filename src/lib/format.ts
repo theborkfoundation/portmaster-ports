@@ -22,3 +22,10 @@ export function formatBytes(bytes: number): string {
   }
   return `${value.toFixed(value >= 10 ? 0 : 1)} ${units[unit]}`
 }
+
+const countFormatter = new Intl.NumberFormat("en")
+
+/** 12345 -> "12,345" */
+export function formatCount(value: number): string {
+  return countFormatter.format(value)
+}

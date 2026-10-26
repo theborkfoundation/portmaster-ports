@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { formatBytes } from "../lib/format"
+import { formatBytes, formatCount } from "../lib/format"
 import { assetsFor, getRelease, type ReleaseInfo } from "../lib/releases"
 
 export default function Downloads({ alias }: { alias: string }) {
@@ -57,7 +57,8 @@ export default function Downloads({ alias }: { alias: string }) {
                   {asset.name}
                 </span>
                 <span className="shrink-0 font-mono text-xs text-neutral-500 group-hover:text-neutral-300">
-                  {formatBytes(asset.size)} ↓
+                  {formatBytes(asset.size)} · {formatCount(asset.downloads)}{" "}
+                  {asset.downloads === 1 ? "download" : "downloads"} ↓
                 </span>
               </a>
             </li>
