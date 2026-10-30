@@ -2,6 +2,13 @@
   "tag_name": "v0.0.0",
   "assets": [
     {
+      "name": "boxheadzombies-20261030-193521.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/boxheadzombies-20261030-193521.zip",
+      "size": 1247631,
+      "updated_at": "2026-10-30T12:35:57Z",
+      "download_count": 0
+    },
+    {
       "name": "crossyroad-20261025-101515.zip",
       "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/crossyroad-20261025-101515.zip",
       "size": 1191471,
@@ -20,6 +27,13 @@
       "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/juicyrealm-20261026-163857.zip",
       "size": 1249685,
       "updated_at": "2026-10-26T09:39:06Z",
+      "download_count": 0
+    },
+    {
+      "name": "juicyrealm-20261030-193513.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/juicyrealm-20261030-193513.zip",
+      "size": 1251155,
+      "updated_at": "2026-10-30T12:35:57Z",
       "download_count": 0
     },
     {
@@ -55,6 +69,13 @@
       "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/skyforce-20261026-163917.zip",
       "size": 1767521,
       "updated_at": "2026-10-26T09:39:26Z",
+      "download_count": 0
+    },
+    {
+      "name": "thewayhome-20261030-193527.zip",
+      "browser_download_url": "https://github.com/theborkfoundation/portmaster-ports/releases/download/v0.0.0/thewayhome-20261030-193527.zip",
+      "size": 1256372,
+      "updated_at": "2026-10-30T12:35:57Z",
       "download_count": 0
     }
   ]
