@@ -1,25 +1,12 @@
-import { useEffect, useState } from "react"
+import { useQuery } from "@tanstack/react-query"
 import { formatBytes, formatCount } from "../lib/format"
-import { assetsFor, getRelease, type ReleaseInfo } from "../lib/releases"
+import { assetsFor, releaseQuery } from "../lib/releases"
 
 export default function Downloads({ alias }: { alias: string }) {
-  const [release, setRelease] = useState<ReleaseInfo | null>(null)
-  const [failed, setFailed] = useState(false)
+  const { data: release, isPending, isError } = useQuery(releaseQuery)
 
-  useEffect(() => {
-    let alive = true
-    getRelease()
-      .then((info) => {
-        if (alive) setRelease(info)
-      })
-      .catch(() => {
-        if (alive) setFailed(true)
-      })
-    return () => {
-      alive = false
-    }
-  }, [])
-
+  // A failed background refetch keeps serving the cached data.
+  const failed = isError && !release
   const assets = release ? assetsFor(release, alias) : []
 
   return (
@@ -30,7 +17,7 @@ export default function Downloads({ alias }: { alias: string }) {
         </h2>
       </div>
 
-      {!release && !failed && (
+      {isPending && (
         <p className="text-sm text-neutral-500">Loading builds…</p>
       )}
 
