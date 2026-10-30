@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom"
 import Downloads from "../components/Downloads"
 import { getPort } from "../content/ports"
 import { formatDate } from "../lib/format"
+import { REPO } from "../lib/releases"
 
 export default function PortDetail() {
   const port = getPort(useParams().slug)
@@ -69,6 +70,19 @@ export default function PortDetail() {
       </ul>
 
       <Downloads alias={port.alias} />
+
+      <section className="border-t border-neutral-800 pt-6">
+        <p className="text-sm text-neutral-500">
+          Found a bug with this port?{" "}
+          <a
+            href={`https://github.com/${REPO}/issues/new`}
+            className="text-neutral-300 underline decoration-neutral-700 underline-offset-4 hover:text-white"
+          >
+            Report issues
+          </a>{" "}
+          on GitHub.
+        </p>
+      </section>
     </div>
   )
 }

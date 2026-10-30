@@ -1,4 +1,4 @@
-const REPO = "theborkfoundation/portmaster-ports"
+export const REPO = "theborkfoundation/portmaster-ports"
 const TAG = "v0.0.0"
 
 export type ReleaseAsset = {
